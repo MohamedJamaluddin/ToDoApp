@@ -6,11 +6,9 @@ This Project contains mainly four components :
 
 1. DataSource - This package provides data source to the App using both Network and Room DB.
 
-2. DI - This package contains Dagger v2.0 Modules and Components used to provide dependency at runtime.
+2. Repository - This layer provides an interface between ViewModel and DataSource.
 
-3. Repository - This layer provides an interface between ViewModel and DataSource.
-
-4. View/ViewModel - This layer provides interaction between View and ViewModel using Data Binding approach.
+3. View/ViewModel - This layer provides interaction between View and ViewModel using Data Binding approach.
 
 Dependencies:
 
