@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion build_compileSdkVersion
+    dataBinding.enabled build_databinding_enable
+
+    defaultConfig {
+        applicationId "com.jamal.todo"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:' + root_kotlin_version
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:' + root_kotlin_version
+
+    implementation 'androidx.appcompat:appcompat:' + appcompatx
+    implementation 'androidx.constraintlayout:constraintlayout:' + constraint_layout
+    implementation 'androidx.multidex:multidex:' + multidex
+
+    implementation 'androidx.recyclerview:recyclerview:' + recycler_view
+    implementation 'androidx.cardview:cardview:' + cardviewx
+    implementation 'com.google.android.material:material:' + materialx
+    implementation 'androidx.legacy:legacy-support-v4:' + androidx_legacy_support_v4
+
+    //ktx
+    implementation 'androidx.core:core-ktx:' + ktx_core
+
+    //lifecycle
+    implementation 'androidx.lifecycle:lifecycle-extensions:' + lifecycle
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:' + lifecycle
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    kapt 'androidx.lifecycle:lifecycle-compiler:' + lifecycle
+
+    //room
+    implementation 'androidx.room:room-runtime:' + room
+    implementation 'androidx.room:room-ktx:' + room
+    kapt 'androidx.room:room-compiler:' + room
+
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.airbnb.android:lottie:' + lottie
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+}

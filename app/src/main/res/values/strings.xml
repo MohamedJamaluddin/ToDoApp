@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ToDo</string>
+
+    <string name="label_no_data">No Task Available</string>
+    <string name="please_wait">Please wait …</string>
+    <string name="save">Delete</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="msg_data_saved_successfully">Task is saved successfully</string>
+    <string name="err_msg_data_saved_failed">Unable to process your request</string>
+    <string name="task_title">Title: %s </string>
+    <string name="task_desc">Description: %s </string>
+    <string name="done">Done</string>
+    <string name="enterTitle">Please enter title</string>
+    <string name="enterDesc">Please enter description</string>
+    <string name="msg_task_deleted_successfully">Task deleted successfully</string>
+
+</resources>

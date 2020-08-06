@@ -1,0 +1,57 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginStart">@dimen/dimen_5_dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_5_dp</item>
+        <item name="android:padding">@dimen/dimen_5_dp</item>
+        <item name="android:textColorHint">@color/colorHeaderSeparator</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:padding">@dimen/dimen_5_dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TextViewRowItemHeader">
+        <item name="android:padding">@dimen/dimen_5_dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_5_dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TextViewRowItemSubHeader">
+        <item name="android:padding">@dimen/dimen_5_dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:padding">@dimen/dimen_10_dp</item>
+        <item name="android:layout_margin">@dimen/dimen_5_dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/dimen_16_sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:padding">@dimen/dimen_10_dp</item>
+        <item name="android:layout_margin">@dimen/dimen_5_dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/color_button</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+</resources>
